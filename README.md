@@ -2,7 +2,9 @@
 RDF description of Digital Agency Organization
 
 ## ソース
-https://www.digital.go.jp/about/member　にある組織図を organization ontology を使って記述してみました。ネットワーク図の生成は神崎さんの　https://www.kanzaki.com/works/2009/pub/graph-draw　　　をお借りしました。 また、https://www.digital.go.jp/about/member　から幹事の方々を紐づけました。
+- https://www.digital.go.jp/about/member　にある組織図を organization ontology を使って記述してみました。
+- また、https://www.digital.go.jp/about/member　から幹事の方々を紐づけました。
+- ネットワーク図の生成は神崎さんのツールを使わせてもらっています。 　https://www.kanzaki.com/works/2009/pub/graph-draw　　
 
 ## 課題
 - 監督系統はreportToという関係で下位から上位の役職へつないだ。ただし、横に伸びる役職関係をどうかくかで困った。今回は横の役職は上位の役職へのreportToとした。下位の役職から横に伸びた役職への　reportTO関係も必要か？
