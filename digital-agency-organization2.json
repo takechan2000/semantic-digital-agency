@@ -1,0 +1,345 @@
+{
+  "@graph" : [ {
+    "@id" : "da:CA",
+    "@type" : "org:Post",
+    "prefLabel" : "CA (Cief Architect)",
+    "postin" : "da:デジタル庁",
+    "reportsTo" : "da:デジタル監"
+  }, {
+    "@id" : "da:CDO",
+    "@type" : "org:Post",
+    "prefLabel" : "CDO (Cief Design Officer)",
+    "postin" : "da:デジタル庁",
+    "reportsTo" : "da:デジタル監"
+  }, {
+    "@id" : "da:CISO",
+    "@type" : "org:Post",
+    "prefLabel" : "CISO (Cief Information Security Officer)",
+    "postin" : "da:デジタル庁",
+    "reportsTo" : "da:デジタル監"
+  }, {
+    "@id" : "da:CPO",
+    "@type" : "org:Post",
+    "prefLabel" : "CPO (Cief Product Officer)",
+    "postin" : "da:デジタル庁",
+    "reportsTo" : "da:デジタル監"
+  }, {
+    "@id" : "da:CTO",
+    "@type" : "org:Post",
+    "prefLabel" : "CTO (Cief Technology Officer)",
+    "postin" : "da:デジタル庁",
+    "reportsTo" : "da:デジタル監"
+  }, {
+    "@id" : "da:CoEチーム",
+    "@type" : "org:Organization",
+    "comment" : "Center of Excellence",
+    "prefLabel" : "CoEチーム",
+    "purpose" : "基準・標準 (・アーキテクチャ, ・データ, ・UI/UX/アクセシビリティ, ・ID/認証, ・クラウド, ・ネットワーク, ・セキュリティ, ・地方業務関係, 等)",
+    "subOrganizationOf" : "da:デジタル社会共通機能グループ"
+  }, {
+    "@id" : "da:デジタル副大臣",
+    "@type" : "org:Post",
+    "prefLabel" : "デジタル副大臣",
+    "postin" : "da:デジタル庁",
+    "reportsTo" : "da:デジタル大臣"
+  }, {
+    "@id" : "da:デジタル参与",
+    "@type" : "org:Post",
+    "comment" : "デジタル制作担当、BPR・システム調達担当",
+    "prefLabel" : "デジタル参与",
+    "postin" : "da:デジタル庁",
+    "reportsTo" : "da:デジタル監"
+  }, {
+    "@id" : "da:デジタル大臣",
+    "@type" : "org:Post",
+    "sameAs" : "http://www.wikidata.org/entity/Q108373704",
+    "prefLabel" : "デジタル大臣",
+    "headOf" : "da:デジタル庁",
+    "reportsTo" : "da:内閣総理大臣"
+  }, {
+    "@id" : "da:デジタル大臣政務官",
+    "@type" : "org:Post",
+    "prefLabel" : "デジタル大臣政務官",
+    "postin" : "da:デジタル庁",
+    "reportsTo" : "da:デジタル大臣"
+  }, {
+    "@id" : "da:デジタル審議官",
+    "@type" : "org:Post",
+    "prefLabel" : "デジタル審議官",
+    "postin" : "da:デジタル庁",
+    "reportsTo" : "da:デジタル監"
+  }, {
+    "@id" : "da:デジタル庁",
+    "@type" : "org:Organization",
+    "sameAs" : "http://www.wikidata.org/entity/Q107291492",
+    "prefLabel" : "デジタル庁",
+    "subOrganizationOf" : "da:日本政府"
+  }, {
+    "@id" : "da:デジタル監",
+    "@type" : "org:Post",
+    "prefLabel" : "デジタル監",
+    "postin" : "da:デジタル庁",
+    "reportsTo" : "da:デジタル大臣"
+  }, {
+    "@id" : "da:デジタル社会共通機能グループ",
+    "@type" : "org:Organization",
+    "prefLabel" : "デジタル社会共通機能グループ",
+    "subOrganizationOf" : "da:デジタル庁"
+  }, {
+    "@id" : "da:デジタル社会共通機能グループ次長",
+    "@type" : "org:Post",
+    "prefLabel" : "デジタル社会共通機能グループ次長",
+    "postIn" : "da:デジタル社会共通機能グループ",
+    "reportTo" : "da:デジタル社会共通機能グループ長"
+  }, {
+    "@id" : "da:デジタル社会共通機能グループ長",
+    "@type" : "org:Post",
+    "prefLabel" : "デジタル社会共通機能グループ長",
+    "headOf" : "da:デジタル社会共通機能グループ",
+    "reportTo" : "da:デジタル監"
+  }, {
+    "@id" : "da:デジタル顧問",
+    "@type" : "org:Post",
+    "comment" : "デジタル制作担当、BPR・システム調達担当",
+    "prefLabel" : "デジタル顧問",
+    "postin" : "da:デジタル庁",
+    "reportsTo" : "da:デジタル監"
+  }, {
+    "@id" : "da:人材プール",
+    "@type" : "org:Organization",
+    "prefLabel" : "人材プール",
+    "purpose" : [ "行政人材ユニット", "PMユニット", "セキュリティユニット", "エンジニアリングユニット", "デザイナーユニット" ],
+    "subOrganizationOf" : "da:デジタル社会共通機能グループ"
+  }, {
+    "@id" : "da:内閣総理大臣",
+    "@type" : "org:Post",
+    "prefLabel" : "内閣総理大臣",
+    "headOf" : "da:日本政府"
+  }, {
+    "@id" : "da:品質管理サポート",
+    "@type" : "org:Organization",
+    "prefLabel" : "品質管理 (クオリティ・アシュアランス）サポート",
+    "subOrganizationOf" : "da:デジタル社会共通機能グループ"
+  }, {
+    "@id" : "da:国民向けサービスグループ",
+    "@type" : "org:Organization",
+    "prefLabel" : "国民向けサービスグループ",
+    "subOrganizationOf" : "da:デジタル庁"
+  }, {
+    "@id" : "da:国民向けサービスグループ次長",
+    "@type" : "org:Post",
+    "prefLabel" : "国民向けサービスグループ次長",
+    "postIn" : "da:国民向けサービスグループ",
+    "reportTo" : "da:国民向けサービスグループ長"
+  }, {
+    "@id" : "da:国民向けサービスグループ長",
+    "@type" : "org:Post",
+    "prefLabel" : "国民向けサービスグループ長",
+    "headOf" : "da:国民向けサービスグループ",
+    "reportTo" : "da:デジタル監"
+  }, {
+    "@id" : "da:国民向けサービス開発・運用",
+    "@type" : "org:Organization",
+    "prefLabel" : "国民向けサービス開発・運用",
+    "purpose" : [ "その他重要分野・サービス", "地方活性化分野", "防災分野", "教育分野", "健康・医療・介護分野", "フロントサービス" ],
+    "subOrganizationOf" : "da:国民向けサービスグループ"
+  }, {
+    "@id" : "da:戦略チーム",
+    "@type" : "org:Organization",
+    "prefLabel" : "戦略チーム",
+    "purpose" : [ "セキュリティ、危機管理", "広報戦略", "国際戦略", "システム統括・監理、リソース配分", "戦略企画" ],
+    "subOrganizationOf" : "da:戦略・組織グループ"
+  }, {
+    "@id" : "da:戦略・組織グループ",
+    "@type" : "org:Organization",
+    "prefLabel" : "戦略・組織グループ",
+    "subOrganizationOf" : "da:デジタル庁"
+  }, {
+    "@id" : "da:戦略・組織グループ次長",
+    "@type" : "org:Post",
+    "prefLabel" : "戦略・組織グループ次長",
+    "postIn" : "da:戦略・組織グループ",
+    "reportTo" : "da:戦略・組織グループ長"
+  }, {
+    "@id" : "da:戦略・組織グループ長",
+    "@type" : "org:Post",
+    "prefLabel" : "戦略・組織グループ長",
+    "headOf" : "da:戦略・組織グループ",
+    "reportTo" : "da:デジタル監"
+  }, {
+    "@id" : "da:省庁業務サービスグループ",
+    "@type" : "org:Organization",
+    "prefLabel" : "省庁業務サービスグループ",
+    "subOrganizationOf" : "da:デジタル庁"
+  }, {
+    "@id" : "da:省庁業務サービスグループ次長",
+    "@type" : "org:Post",
+    "prefLabel" : "省庁業務サービスグループ次長",
+    "postIn" : "da:省庁業務サービスグループ",
+    "reportTo" : "da:省庁業務サービスグループ長"
+  }, {
+    "@id" : "da:省庁業務サービスグループ長",
+    "@type" : "org:Post",
+    "prefLabel" : "省庁業務サービスグループ長",
+    "headOf" : "da:省庁業務サービスグループ",
+    "reportTo" : "da:デジタル監"
+  }, {
+    "@id" : "da:省庁業務サービス開発・運用",
+    "@type" : "org:Organization",
+    "prefLabel" : "省庁業務サービス開発・運用",
+    "purpose" : [ "各府庁システム・独法システム 等", "基盤イステム 等" ],
+    "subOrganizationOf" : "da:省庁業務サービスグループ"
+  }, {
+    "@id" : "da:総務チーム",
+    "@type" : "org:Organization",
+    "prefLabel" : "総務チーム",
+    "purpose" : [ "情報システム", "法務", "調達支援", "会計", "人事", "総務・法令" ],
+    "subOrganizationOf" : "da:戦略・組織グループ"
+  }, {
+    "@id" : "npa:AkaishiKoichi",
+    "@type" : "foaf:Person",
+    "hold" : "da:デジタル審議官",
+    "name" : "赤石 浩一"
+  }, {
+    "@id" : "npa:AsanumaTakashi",
+    "@type" : "foaf:Person",
+    "hold" : "da:CDO",
+    "name" : "浅沼 尚"
+  }, {
+    "@id" : "npa:EsakiHiroshi",
+    "@type" : "foaf:Person",
+    "hold" : "da:CA",
+    "name" : "江崎 浩"
+  }, {
+    "@id" : "npa:FujiiHisayuki",
+    "@type" : "foaf:Person",
+    "sameAs" : [ "http://ja.dbpedia.org/resource/藤井比早之", "http://www.wikidata.org/entity/Q11622818" ],
+    "hold" : "da:デジタル副大臣",
+    "name" : "藤井 比早之"
+  }, {
+    "@id" : "npa:FujimotoMasaki",
+    "@type" : "foaf:Person",
+    "hold" : "da:CTO",
+    "name" : "藤本 真樹"
+  }, {
+    "@id" : "npa:HayaseKazuyoshi",
+    "@type" : "foaf:Person",
+    "hold" : "da:省庁業務サービスグループ次長",
+    "name" : "早瀬 千善"
+  }, {
+    "@id" : "npa:IndoShusaku",
+    "@type" : "foaf:Person",
+    "hold" : "da:デジタル社会共通機能グループ次長",
+    "name" : "犬童 周作"
+  }, {
+    "@id" : "npa:IshikuraYoko",
+    "@type" : "foaf:Person",
+    "sameAs" : [ "http://ja.dbpedia.org/resource/石倉洋子", "http://www.wikidata.org/entity/Q11585170" ],
+    "hold" : "da:デジタル監",
+    "name" : "石倉 洋子"
+  }, {
+    "@id" : "npa:KusunokiMasanori",
+    "@type" : "foaf:Person",
+    "sameAs" : [ "http://ja.dbpedia.org/resource/楠正憲", "http://www.wikidata.org/entity/Q11541237" ],
+    "hold" : "da:デジタル社会共通機能グループ長",
+    "name" : "楠 正憲"
+  }, {
+    "@id" : "npa:MizushimaSota",
+    "@type" : "foaf:Person",
+    "hold" : "da:CPO",
+    "name" : "水島 壮太"
+  }, {
+    "@id" : "npa:MurakamiKeisuke",
+    "@type" : "foaf:Person",
+    "hold" : "da:国民向けサービスグループ長",
+    "name" : "村上 敬亮"
+  }, {
+    "@id" : "npa:OkashitaShohei",
+    "@type" : "foaf:Person",
+    "sameAs" : [ "http://ja.dbpedia.org/resource/岡下昌平", "http://www.wikidata.org/entity/Q20039172" ],
+    "hold" : "da:デジタル大臣政務官",
+    "name" : "岡下 昌平"
+  }, {
+    "@id" : "npa:SakaAkira",
+    "@type" : "foaf:Person",
+    "hold" : "da:CISO",
+    "name" : "坂 明"
+  }, {
+    "@id" : "npa:ShinoharaToshihiro",
+    "@type" : "foaf:Person",
+    "hold" : "da:省庁業務サービスグループ長",
+    "name" : "篠原 俊博"
+  }, {
+    "@id" : "npa:SugawaraNozomu",
+    "@type" : "foaf:Person",
+    "hold" : "da:省庁業務サービスグループ次長",
+    "name" : "菅原 希"
+  }, {
+    "@id" : "npa:TakuyaHirai",
+    "@type" : "foaf:Person",
+    "sameAs" : [ "http://ja.dbpedia.org/resource/平井卓也", "http://www.wikidata.org/entity/Q7678622" ],
+    "hold" : "da:デジタル大臣",
+    "name" : "平井 卓也"
+  }, {
+    "@id" : "npa:TomiyasuTaiichiro",
+    "@type" : "foaf:Person",
+    "hold" : "da:戦略・組織グループ長",
+    "name" : "冨安 泰一郎"
+  }, {
+    "@id" : "npa:UchiyamaHiroyuki",
+    "@type" : "foaf:Person",
+    "hold" : "da:国民向けサービスグループ次長",
+    "name" : "内山 博之"
+  }, {
+    "@id" : "npa:YamamotoKazunori",
+    "@type" : "foaf:Person",
+    "hold" : "da:戦略・組織グループ次長",
+    "name" : "山本 和徳"
+  } ],
+  "@id" : "urn:x-arq:DefaultGraphNode",
+  "@context" : {
+    "subOrganizationOf" : {
+      "@id" : "http://www.w3.org/ns/org#subOrganizationOf",
+      "@type" : "@id"
+    },
+    "prefLabel" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "purpose" : "http://www.w3.org/ns/org#purpose",
+    "reportTo" : {
+      "@id" : "http://www.w3.org/ns/org#reportTo",
+      "@type" : "@id"
+    },
+    "headOf" : {
+      "@id" : "http://www.w3.org/ns/org#headOf",
+      "@type" : "@id"
+    },
+    "hold" : {
+      "@id" : "http://www.w3.org/ns/org#hold",
+      "@type" : "@id"
+    },
+    "name" : "http://xmlns.com/foaf/0.1/name",
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2002/07/owl#sameAs",
+      "@type" : "@id"
+    },
+    "reportsTo" : {
+      "@id" : "http://www.w3.org/ns/org#reportsTo",
+      "@type" : "@id"
+    },
+    "postin" : {
+      "@id" : "http://www.w3.org/ns/org#postin",
+      "@type" : "@id"
+    },
+    "postIn" : {
+      "@id" : "http://www.w3.org/ns/org#postIn",
+      "@type" : "@id"
+    },
+    "comment" : "http://www.w3.org/2000/01/rdf-schema#comment",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "org" : "http://www.w3.org/ns/org#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "da" : "http://digital.go.jp/schema#",
+    "foaf" : "http://xmlns.com/foaf/0.1/",
+    "npa" : "http://www.jinji.go.jp/schema#"
+  }
+}
