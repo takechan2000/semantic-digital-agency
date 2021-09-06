@@ -1,4 +1,4 @@
-# sematic-digital-agency
+# semantic-digital-agency
 RDF description of Digital Agency Organization
 
 ## ソース
