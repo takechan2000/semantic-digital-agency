@@ -1,0 +1,282 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix da: <http://digital.go.jp/schema#> .
+@prefix npa: <http://www.jinji.go.jp/schema#> .
+
+da:内閣総理大臣 a org:Post ;
+  skos:prefLabel "内閣総理大臣" ;
+  org:headOf da:日本政府 .
+
+da:デジタル大臣 a org:Post ;
+  skos:prefLabel "デジタル大臣" ;
+  org:postIn da:デジタル庁 ;
+  org:headOf da:デジタル庁 ;
+  org:reportsTo da:内閣総理大臣 .
+
+da:デジタル副大臣 a org:Post ;
+  skos:prefLabel "デジタル副大臣" ;
+  org:postIn da:デジタル庁 ;
+  org:reportsTo da:デジタル大臣 .
+
+da:デジタル大臣政務官 a org:Post ;
+  skos:prefLabel "デジタル大臣政務官" ;
+  org:postIn da:デジタル庁 ;
+  org:reportsTo da:デジタル大臣 .
+
+da:デジタル監 a org:Post ;
+  skos:prefLabel "デジタル監" ;
+  org:postIn da:デジタル庁 ;
+  org:reportsTo da:デジタル大臣 .
+
+da:デジタル審議官 a org:Post ;
+  skos:prefLabel "デジタル審議官" ;
+  org:postIn da:デジタル庁 ;
+  org:reportsTo da:デジタル監 .
+    
+da:顧問 a org:Post ;
+  skos:prefLabel "デジタル顧問" ;
+  rdfs:comment "デジタル制作担当、BPR・システム調達担当" ;
+  org:postIn da:デジタル庁 ;
+  org:reportsTo da:デジタル監 .
+
+da:参与 a org:Post ;
+  skos:prefLabel "デジタル参与" ;
+  rdfs:comment "デジタル制作担当、BPR・システム調達担当" ;
+  org:postIn da:デジタル庁 ;
+  org:reportsTo da:デジタル監 .
+
+da:CA a org:Post ;
+  skos:prefLabel "CA (Cief Architect)" ;
+  org:postIn da:デジタル庁 ;
+  org:reportsTo da:デジタル監 .
+
+da:CDO a org:Post ;
+  skos:prefLabel "CDO (Cief Design Officer)" ;
+  org:postIn da:デジタル庁 ;
+  org:reportsTo da:デジタル監 .
+
+da:CISO a org:Post ;
+  skos:prefLabel "CISO (Cief Information Security Officer)" ;
+  org:postIn da:デジタル庁 ;
+  org:reportsTo da:デジタル監 .
+
+da:CPO a org:Post ;
+  skos:prefLabel "CPO (Cief Product Officer)" ;
+  org:postIn da:デジタル庁 ;
+  org:reportsTo da:デジタル監 .
+
+da:CTO a org:Post ;
+  skos:prefLabel "CTO (Cief Technology Officer)" ;
+  org:postIn da:デジタル庁 ;
+  org:reportsTo da:デジタル監 .
+
+da:デジタル庁 a org:Organization ;
+  skos:prefLabel "デジタル庁" ;
+  org:subOrganizationOf da:日本政府 .
+
+da:戦略・組織グループ a org:Organization ;
+  skos:prefLabel "戦略・組織グループ" ;
+  org:subOrganizationOf da:デジタル庁 .
+
+da:戦略・組織グループ長 a org:Post ;
+  skos:prefLabel "戦略・組織グループ長" ;
+  org:postIn da:デジタル庁 ;
+  org:headOf da:戦略・組織グループ ;
+  org:reportsTo da:デジタル監 .
+
+da:戦略・組織グループ次長 a org:Post ;
+  skos:prefLabel "戦略・組織グループ次長" ;
+  org:postIn da:戦略・組織グループ ;
+  org:reportsTo da:戦略・組織グループ長 .
+
+da:総務チーム a org:Organization ;
+  skos:prefLabel "総務チーム" ;
+  org:subOrganizationOf da:戦略・組織グループ ;
+  org:purpose "総務・法令" ;
+  org:purpose "人事" ;
+  org:purpose "会計" ;
+  org:purpose "調達支援" ;
+  org:purpose "法務" ;
+  org:purpose "情報システム" .
+
+da:戦略チーム a org:Organization ;
+  skos:prefLabel "戦略チーム" ;
+  org:subOrganizationOf da:戦略・組織グループ ;
+  org:purpose "戦略企画" ;
+  org:purpose "システム統括・監理、リソース配分" ;
+  org:purpose "国際戦略" ;
+  org:purpose "広報戦略" ;
+  org:purpose "セキュリティ、危機管理" .
+
+da:デジタル社会共通機能グループ a org:Organization ;
+  skos:prefLabel "デジタル社会共通機能グループ" ;
+  org:subOrganizationOf da:デジタル庁 .
+
+da:デジタル社会共通機能グループ長 a org:Post ;
+  skos:prefLabel "デジタル社会共通機能グループ長" ;
+  org:postIn da:デジタル庁 ;
+  org:headOf da:デジタル社会共通機能グループ ;
+  org:reportsTo da:デジタル監 .
+
+da:デジタル社会共通機能グループ次長 a org:Post ;
+  skos:prefLabel "デジタル社会共通機能グループ次長" ;
+  org:postIn da:デジタル社会共通機能グループ ;
+  org:reportsTo da:デジタル社会共通機能グループ長 .
+
+da:CoEチーム a org:Organization ;
+  skos:prefLabel "CoEチーム" ;
+  org:subOrganizationOf da:デジタル社会共通機能グループ ;
+  rdfs:comment "Center of Excellence" ;
+  org:purpose "基準・標準 (・アーキテクチャ, ・データ, ・UI/UX/アクセシビリティ, ・ID/認証, ・クラウド, ・ネットワーク, ・セキュリティ, ・地方業務関係, 等)" .
+
+
+da:品質管理サポート a org:Organization ;
+  skos:prefLabel "品質管理 (クオリティ・アシュアランス）サポート" ;
+  org:subOrganizationOf da:デジタル社会共通機能グループ .
+
+da:人材プール a org:Organization ;
+  skos:prefLabel "人材プール" ;
+  org:subOrganizationOf da:デジタル社会共通機能グループ ;
+  org:purpose "デザイナーユニット" ;
+  org:purpose "エンジニアリングユニット" ;
+  org:purpose "セキュリティユニット" ;
+  org:purpose "PMユニット" ;
+  org:purpose "行政人材ユニット" .
+
+da:国民向けサービスグループ a org:Organization ;
+  skos:prefLabel "国民向けサービスグループ" ;
+  org:subOrganizationOf da:デジタル庁 .
+
+da:国民向けサービスグループ長 a org:Post ;
+  skos:prefLabel "国民向けサービスグループ長" ;
+  org:postIn da:デジタル庁 ;
+  org:headOf da:国民向けサービスグループ ;
+  org:reportsTo da:デジタル監 .
+
+da:国民向けサービスグループ次長 a org:Post ;
+  skos:prefLabel "国民向けサービスグループ次長" ;
+  org:postIn da:国民向けサービスグループ ;
+  org:reportsTo da:国民向けサービスグループ長 .
+
+da:国民向けサービス開発・運用 a org:Organization ;
+  skos:prefLabel "国民向けサービス開発・運用" ;
+  org:subOrganizationOf da:国民向けサービスグループ ;
+  org:purpose "フロントサービス" ;
+  org:purpose "健康・医療・介護分野" ;
+  org:purpose "教育分野" ;
+  org:purpose "防災分野" ;
+  org:purpose "地方活性化分野" ;
+  org:purpose "その他重要分野・サービス" .
+
+da:省庁業務サービスグループ a org:Organization ;
+  skos:prefLabel "省庁業務サービスグループ" ;
+  org:subOrganizationOf da:デジタル庁 .
+
+da:省庁業務サービスグループ長 a org:Post ;
+  skos:prefLabel "省庁業務サービスグループ長" ;
+  org:postIn da:デジタル庁 ;
+  org:headOf da:省庁業務サービスグループ ;
+  org:reportsTo da:デジタル監 .
+
+da:省庁業務サービスグループ次長 a org:Post ;
+  skos:prefLabel "省庁業務サービスグループ次長" ;
+  org:postIn da:省庁業務サービスグループ ;
+  org:reportsTo da:省庁業務サービスグループ長 .
+
+da:省庁業務サービス開発・運用 a org:Organization ;
+  skos:prefLabel "省庁業務サービス開発・運用" ;
+  org:subOrganizationOf da:省庁業務サービスグループ ;
+  org:purpose "基盤イステム 等" ;
+  org:purpose "各府庁システム・独法システム 等" .
+
+npa:TakuyaHirai a foaf:Person ;
+  foaf:name "牧島 かれん" ;
+  org:holds da:デジタル大臣 .
+
+npa:FujiiHisayuki a foaf:Person ;
+  foaf:name "小林 史明" ;
+  org:holds da:デジタル副大臣 .
+
+npa:OkashitaShohei a foaf:Person ;
+  foaf:name "山田 太郎" ;
+  org:holds da:デジタル大臣政務官 .
+
+npa:IshikuraYoko a foaf:Person ;
+  foaf:name "石倉 洋子" ;
+  org:holds da:デジタル監 .
+
+npa:AkaishiKoichi a foaf:Person ;
+  foaf:name "赤石 浩一" ;
+  org:holds da:デジタル審議官 .
+
+npa:MuraiJun a foaf:Person ;
+  foaf:name "村井 純" ;
+  org:holds da:顧問 .
+
+npa:EndoKoichi a foaf:Person ;
+  foaf:name "遠藤 紘一" ;
+  org:holds da:参与 .
+
+npa:MukaiHaruki a foaf:Person ;
+  foaf:name "向井 治紀" ;
+  org:holds da:参与 .
+
+npa:EsakiHiroshi a foaf:Person ;
+  foaf:name "江崎 浩" ;
+  org:holds da:CA .
+
+npa:AsanumaTakashi a foaf:Person ;
+  foaf:name "浅沼 尚" ;
+  org:holds da:CDO .
+
+npa:SakaAkira a foaf:Person ;
+  foaf:name "坂 明" ;
+  org:holds da:CISO .
+
+npa:MizushimaSota a foaf:Person ;
+  foaf:name "水島 壮太" ;
+  org:holds da:CPO .
+
+npa:FujimotoMasaki a foaf:Person ;
+  foaf:name "藤本 真樹" ;
+  org:holds da:CTO .
+
+npa:TomiyasuTaiichiro a foaf:Person ;
+  foaf:name "冨安 泰一郎" ;
+  org:holds da:戦略・組織グループ長 .
+
+npa:YamamotoKazunori a foaf:Person ;
+  foaf:name "山本 和徳" ;
+  org:holds da:戦略・組織グループ次長 .
+
+npa:KusunokiMasanori a foaf:Person ;
+  foaf:name "楠 正憲" ;
+  org:holds da:デジタル社会共通機能グループ長 .
+
+npa:IndoShusaku a foaf:Person ;
+  foaf:name "犬童 周作" ;
+  org:holds da:デジタル社会共通機能グループ次長 .
+
+npa:MurakamiKeisuke a foaf:Person ;
+  foaf:name "村上 敬亮" ;
+  org:holds da:国民向けサービスグループ長 .
+
+npa:UchiyamaHiroyuki a foaf:Person ;
+  foaf:name "内山 博之" ;
+  org:holds da:国民向けサービスグループ次長 .
+
+npa:ShinoharaToshihiro a foaf:Person ;
+  foaf:name "篠原 俊博" ;
+  org:holds da:省庁業務サービスグループ長 .
+
+npa:SugawaraNozomu a foaf:Person ;
+  foaf:name "菅原 希" ;
+  org:holds da:省庁業務サービスグループ次長 .
+
+npa:HayaseKazuyoshi a foaf:Person ;
+  foaf:name "早瀬 千善" ;
+  org:holds da:省庁業務サービスグループ次長 .
+
