@@ -24,3 +24,10 @@ RDF description of Digital Agency Organization
 - 効果
   - typed-graph2.pngで人まで表示されるようになった。
   - 将来、官僚名簿IDがあれば、人IDはそれに置き換えるべき。
+
+## Version 3を追加
+3を付記したフィアル。
+- 変更点：
+  - 2021/10/4発足の内閣による政務人事を反映。
+  - org:holdsとorg:postInでスペルミスを訂正。
+  - 外部リンクなしのバージョン(digital-agency-organization3.ttl)とありのバージョン(digital-agency-organization3link.ttl)に分ける。
